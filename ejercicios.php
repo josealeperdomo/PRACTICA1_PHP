@@ -55,6 +55,18 @@ if($year % 4 == 0 && ($year % 100 != 0 || $year % 400 == 0)){
     echo"$year no es bisiesto".'<br/>';
 }
 
+$yearb = date('L');
+
+switch ($yearb) {
+    case 0:
+        echo'No estamos en ano bisiesto<br/>';
+        break;
+    
+    case 1:
+        echo'Estamos en ano bisiesto<br/>';
+        break;
+}
+
 //6
 $mesdelano = date('m');
 if ($mesdelano == 12 || $mesdelano == 1 || $mesdelano == 2) {
